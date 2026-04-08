@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr" data-tema="karanlik">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ange — Dijital Portfolyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="imlec"></div>
+    <div id="imlechalka"></div>
+
+    <nav>
+        <a href="#hakkimda" class="logo">Elisee.dev</a>
+        <ul class="navlinkler" id="navmenu">
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#yetenekler">Yetenekler</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+            <li><button id="temadugme">&#9790; Aydınlık</button></li>
+        </ul>
+        <button id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section id="hakkimda">
+        <div class="heroicerik">
+            <h1>Merhaba,<br>Ben <span class="v1">Elisee</span> &#128075;</h1>
+            <div id="daktiloyazi"></div>
+            <p class="biyografi">
+                Fildişi Sahili doğumluyum. Türkiye'nin Gümüşhane şehrinde
+                Web ve Yazılım Geliştirme alanında BTS 2. sınıf öğrencisiyim.
+                Siber güvenlik alanında uzmanlaşmayı hedefliyorum
+                ve Fransa'da kariyerimi sürdürmeyi planlıyorum.
+            </p>
+            <div class="herobtns">
+                <a href="#projeler" class="btn btnana">Projelerimi Gör</a>
+                <a href="#iletisim" class="btn btncizgi">İletişime Geç</a>
+            </div>
+        </div>
+        <div class="herofoto">
+            <div class="fotocerceve">
+                <div class="fotoplaceholder">
+                    
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                    <span>Elisee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yetenekler">
+        <h2 class="sbaslik ggelecek">Ne <span class="v1">Biliyorum</span></h2>
+        <div class="yetenekgrid">
+            <div class="ggelecek">
+                <div class="ygrup">
+                    <h3>Teknik Beceriler</h3>
+                    <div id="yetenekbarlari"></div>
+                </div>
+            </div>
+            <div class="ggelecek">
+                <div class="ygrup">
+                    <h3>Eğitim Geçmişi</h3>
+                    <ul class="egitimlist">
+                        <li>
+                            <span class="eyil">2024&#8594;</span>
+                            <div>
+                                <strong>BTS Web &amp; Yazılım Geliştirme</strong><br>
+                                <span style="color:var(--muted);font-size:.82rem">Gümüşhane Üniversitesi &bull; C#, Java, Python, HTML/CSS/JS, Flask</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="eyil">2023</span>
+                            <div>
+                                <strong>Baccalauréat Série D</strong><br>
+                                <span style="color:var(--muted);font-size:.82rem">Fildişi Sahili &bull; Geçebilir not</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="eyil">Dil</span>
+                            <div>
+                                <strong>Türkçe C1 (Sertifikalı)</strong><br>
+                                <span style="color:var(--muted);font-size:.82rem">Fransızca — Anadil &nbsp;&bull;&nbsp; İngilizce — B1 &nbsp;&bull;&nbsp; Turçe - C1</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 style="margin-top:2rem">Alınan Dersler</h3>
+                    <ul class="egitimlist">
+                        <li><span class="eyil">&#8594;</span><div>İnternet Programcılığı I &amp; II</div></li>
+                        <li><span class="eyil">&#8594;</span><div>Nesne Yönelimli Programlama (C#, Java)</div></li>
+                        <li><span class="eyil">&#8594;</span><div>Veri Tabanı Yönetimi (SQLite)</div></li>
+                        <li><span class="eyil">&#8594;</span><div>Sistem Analizi ve Tasarımı</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeler">
+        <h2 class="sbaslik ggelecek">Neler <span class="v2">Yaptım</span></h2>
+        <div class="filtrealani ggelecek" id="filtrealani"></div>
+        <div class="projeizgara" id="projeizgara"></div>
+    </section>
+
+    <section id="iletisim">
+        <h2 class="sbaslik ggelecek">Benimle <span class="v3">İletişime</span> Geç</h2>
+        <div class="iletisimicerik ggelecek">
+            <p>Bir proje fikrin mi var? Birlikte çalışmak mı istiyorsun?
+               Ya da sadece merhaba demek mi? Her türlü mesajına açığım!</p>
+            <div class="iletisimlinkler">
+                <a href="mailto:eliseegahouidi8@gmail.com" class="iletisimlink">
+                    <div class="iikon">&#128231;</div>
+                    <div><div class="ikucuk">E-posta</div><div class="ibuyuk">eliseegahouidi11@gmail.com</div></div>
+                </a>
+                <a href="https://github.com/Elisee-G" target="_blank" class="iletisimlink">
+                    <div class="iikon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z"/>
+                        </svg>
+                    </div>
+                    <div><div class="ikucuk">GitHub</div><div class="ibuyuk">github.com/Elisee-G</div></div>
+                </a>
+                <a href="#" class="iletisimlink">
+                    <div class="iikon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
+                    </div>
+                    <div><div class="ikucuk">LinkedIn</div><div class="ibuyuk">LinkedIn (Henüz yok)</div></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&#169; 2025 Ange &nbsp;&bull;&nbsp; <span style="color:var(--accent)">ange.dev</span> &nbsp;&bull;&nbsp; HTML, CSS &amp; JavaScript ile yapıldı.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
